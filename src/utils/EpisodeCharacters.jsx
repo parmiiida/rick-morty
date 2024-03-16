@@ -3,13 +3,13 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import CharacterCard from '../components/characterCard';
 import { useParams } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 
 const BASE_URL = 'https://rickandmortyapi.com/api';
 
 const EpisodeCharacters = ({url ,ids }) => {
    const {id }= useParams();
-
+   const searchTerm = useSelector(state => state.search);
    const fetchCharactersByEpisode = async (id) => {
     try {
       const response = await axios.get(`${BASE_URL}/episode/${id}`);
@@ -35,9 +35,9 @@ const EpisodeCharacters = ({url ,ids }) => {
 
   return (
     <div className='items-center w-[100%] justify-center flex flex-col'>
-      {data.map((character) => (
-       <CharacterCard key={character.id} data={character} />
-      ))}
+      {data.filter(character => character.name.toLowerCase().includes(searchTerm.toLowerCase())).map((character) => (
+      <CharacterCard key={character.id} data={character} />
+    ))}
     </div>
   );
 }

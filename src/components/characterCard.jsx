@@ -65,9 +65,7 @@ const CharacterCard = ({data ,onDelete , showButtons = true , showDeleteButton =
         </button>
       )}
         </div>
-
        </div>
-
     </div>
 
   )
