@@ -1,8 +1,22 @@
-# React + Vite
+Hello 👩‍💻👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction 
+this is my first project that my only focus isnt in designing nut also fetching data managing them and show them and gives you the ability to save and delete data
 
-Currently, two official plugins are available:
+## Website includes :
+1 reusable components 
+2 storng UI design
+3 responsive and user friendly Css design 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies 🤖
+- React + Vite
+- Redux toolkt
+- ReactQuery
+- Tailwind Css
+  
+
+[Live on](https://rick-morty-iota-teal.vercel.app/) 💻
+
+
+![Screenshot (33)](https://github.com/parmiiida/rick-morty/assets/130662273/538eb6f9-1813-4888-9df7-c9e5d57f16b4)
+
